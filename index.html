@@ -1,53 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Carlos Barajas</title>
-    <!---image for tab-->
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="static/favicon.ico"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <!---Linking JavaScript file to extend header/footer-->
-    <script type="module" src="partials.js"></script>
-</head>
 <body>
-    <my-header></my-header>
-    
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>About Me</h1>
-                <img src="photo.jpg" class="img-fluid">
+    <div class="container" style="margin-top: 8%;">
+        <div class="row" style="text-align: center;">
+            <div class="col-12 col-lg-6">
+                    <img src="static/img/user.webp" class="img-fluid" style="max-height: 350px;">
+                
+                <h1 style="margin-top: 3%;"><b>Carlos Barajas</b></h1>
+                <h4><i>Computer Science and Engineering Graduate</i></h4>
             </div>
-            <div id="more" class="col-12 col-lg-6">
-                <h2>Favorite Music Artists</h2>
-                <ul>
-                    <li>Panic! at the Disco</li>
-                    <li>Mana</li>
-                    <li>Chemical Romance</li>
-                    <li>Miguel Bose</li>
-                    <li>System of a Down</li>
-                </ul>
-                <h2>Favorite Films</h2>
-                <ol>
-                    <li>Wonka</li>
-                    <li>Dune</li>
-                    <li>Iron Man</li>
-                    <li>The King</li>
-                    <li>Inception</li>
-                </ol>
-                <a href="https://www.meta.com" class="btn btn-primary">Meta Web Site</a>
-
+            <div class="col-12 col-lg-6" id="about-me">
+                <h3>ABOUT ME</h3>
+                <p>
+                    I'm a highly motivated graduate in Computer Science and Engineering from the University of California, Irvine. I am excited to embark on a career path that allows me to apply my extensive knowledge while continuously developing new skills and expertise. My academic background and practical experience have equipped me with a strong foundation in computer science principles, programming languages, and engineering concepts.
+                </p>
+                <a href="#" class="btn btn-outline-success" style="margin-top: 10%;">RESUME</a> 
+    
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
-        let content = document.querySelector('link[rel="import"]').import;
-    </script>
-    <my-footer></my-footer>
 </body>
-</html>
