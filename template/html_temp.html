@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Bootstrap and CSS -->
+        <!-- Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+        <!--CSS-->
         <link href="static/css/style.css" rel="stylesheet">
-
+        <!--JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="components/navbar.js"></script>
 
         <!--tab info-->
         <link rel="shortcut icon" type="image/png" href="static/img/favicon.ico">
@@ -19,45 +20,11 @@
 
     <body>
         <!--Navigation Bar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-        
-                <a class="navbar-brand" style="font-family: Arial, Helvetica, sans-serif;" href="#"><b style="color: green;">Carlos Barajas</b></a>
-        
-                <button
-                    class="navbar-toggler"
-                    type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"    
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>                    
-            
-                <!--To Show in Toggler Menu-->
-                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <div></div>
-                        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="offcanvas-body" id="offcanvasBody">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" id="nav-sub" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" id="nav-sub" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" id="nav-sub" href="#">Certificates</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        
-            </div>
-        </nav>
+        <my-navbar></my-navbar>
 
         <!--Page Body-->
+        
+        
         
     </body>
 </html>
