@@ -1,4 +1,4 @@
-
+/*for nav bar*/
 #offcanvasBody{
     text-align: center;
     font-size:x-large;
@@ -7,6 +7,10 @@
     color: rgb(38, 195, 38);
     
 }
+svg:hover{
+    fill: rgb(38, 195, 38); 
+}
+/*index page*/
 #about-me{
     margin-top: auto;
     margin-bottom: auto;
