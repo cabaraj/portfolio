@@ -25,8 +25,16 @@ body{
 }
 h2{
     color: #535353;
+    padding-top: 3%;
     padding-bottom: 5%;
 }
 .row{
     text-align: center;
+}
+.side-by-side{
+    display: inline-block;
+    margin: 5%;
+}
+.smaller-text>p{
+    font-size: small;
 }
