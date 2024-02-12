@@ -33,7 +33,7 @@ class NavBar extends HTMLElement {
                                 <a class="nav-link active" id="nav-sub" href="certificates.html">Certifications</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="nav-sub" href="#">Contact</a>
+                                <a class="nav-link active" id="nav-sub" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" id="nav-sub-icon" href="https://linkedin.com/in/barajas-carlos" target="_blank">
