@@ -30,7 +30,7 @@ class NavBar extends HTMLElement {
                                 <a class="nav-link active" id="nav-sub" href="projects.html">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="nav-sub" href="certificates.html">Certificates</a>
+                                <a class="nav-link active" id="nav-sub" href="certificates.html">Certifications</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" id="nav-sub" href="#">Contact</a>
