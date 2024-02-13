@@ -38,3 +38,9 @@ h2{
 .smaller-text>p{
     font-size: small;
 }
+.smaller-text{
+    position:fixed;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: 0%;
+}
