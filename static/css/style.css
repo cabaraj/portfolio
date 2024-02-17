@@ -44,3 +44,17 @@ h2{
     transform: translate(-50%,0);
     bottom: 0%;
 }
+#project-title{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+#project-button{
+    text-decoration: none;
+    color: black;
+}
+#project-button:hover{
+    color: rgb(38, 195, 38);
+}
