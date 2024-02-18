@@ -6,10 +6,16 @@ body{
     justify-content: center;
     align-items: center;
 }
+/*Footer*/
 .footer{
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
+}
+.side-by-side-footer{
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 @media (max-width: 900px){
     .footer-fixed{
@@ -92,8 +98,4 @@ p, li, div>b{
 }
 
 #tester{
-    position: fixed;
-    left: 50%;
-    bottom: 20px; /* Adjust as needed */
-    transform: translate(-50%, 0%);
 }
