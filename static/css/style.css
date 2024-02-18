@@ -1,3 +1,15 @@
+body{
+    background-color: #e2e2e2;
+}
+.row{
+    text-align: center;
+}
+/*Titles*/
+h1{
+    color: #535353;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
 /*for nav bar*/
 #offcanvasBody{
     text-align: center;
@@ -20,17 +32,7 @@ svg:hover{
 p{
     font-size: large;
 }
-body{
-    background-color: #e2e2e2;
-}
-h2{
-    color: #535353;
-    padding-top: 3%;
-    padding-bottom: 5%;
-}
-.row{
-    text-align: center;
-}
+/*Contact Page*/
 .side-by-side{
     display: inline-block;
     margin: 5%;
@@ -44,6 +46,7 @@ h2{
     transform: translate(-50%,0);
     bottom: 0%;
 }
+/*Project Page*/
 #project-title{
     text-align: center;
     margin-top: auto;
@@ -58,10 +61,10 @@ h2{
 #project-button:hover{
     color: rgb(38, 195, 38);
 }
+/*LittleLemon Project*/
 #img-slide{
-    max-height: 300px;
+    max-height: 500px;
 }
-
 #responsive-box {
     width: 100%;
     max-width: 700px;
