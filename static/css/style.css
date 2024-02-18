@@ -7,9 +7,14 @@ body{
     align-items: center;
 }
 .footer{
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
+}
+@media (min-width: 900px){
+    .footer{
+        margin-top: 20px;
+    }
 }
 /*Titles*/
 h1{

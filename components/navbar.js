@@ -66,7 +66,7 @@ customElements.define('my-navbar', NavBar);
 class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <div class="text-center p-3 footer" stle="background-color: rgba(0, 0, 0, 0.5);">
+        <div class="text-center p-3 footer">
             <div class="row">
                 <div class="col-6">
                     Developed by Carlos Barajas
