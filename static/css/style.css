@@ -68,15 +68,13 @@ p, li, div>b{
 }
 /*Project Page*/
 #project-title{
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-top: 50%;
-    padding-bottom: 50%;
-}
-#project-title{
-    padding-top: 3%;
-    padding-bottom: 3%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 #project-button{
     text-decoration: none;
@@ -108,9 +106,10 @@ p, li, div>b{
     background-color: green;
     color: white;
 }
-#img-tester{
-    border-radius: 50%;
-    border-color: #333;
-    border-style:solid;
-    border-width: 5px;
+.img-tester{
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid #333;
+    border-radius: 10px;
 }
