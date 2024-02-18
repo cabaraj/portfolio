@@ -24,19 +24,67 @@
 
         <!--Page Body-->
         <div class="container">
-            <div class="row align-items-center">
-                <h1>Little Lemon Website</h1>
-            </div>
-
             <div class="row">
-              <div class="col">
-                  <h3>Developing Back-End API</h3>
-              </div>
+                <h1 style="padding-bottom: 0%;">Little Lemon Website</h1>
+                <div class="col-12 col-lg-8">
+                    <p style="padding-bottom: 3%;">The Little Lemon Web Site was developed as the project for the Meta Back-End Developer course, following the 'Back-End first' development approach.</p>
+                </div>
             </div>
-
-            <div class="row justify-content-center">
+            <!--Back-End API-->
+            <div class="row" style="text-align:start;">
+                <div class="col-12 col-lg-8">   
+                    <h3 style="text-align: center;">Developing Back-End API</h3> 
+                    <p>The website's development process begins by prioritizing the <b>server-side logic</b>, <b>database interaction</b>, the <b>API implementation</b>, and <b>token-based authentication</b>. These foundational elements lay the groundwork for a robust and efficient web application. Here's a breakdown of each aspect:<br></p>
+                    <b>1. Server-Side Logic:</b>
+                    <ul>
+                        <li>
+                            The server-side logic encompasses the code that runs on the web server. It handles requests from clients (such as web browsers) and processes them to generate dynamic responses.
+                        </li>
+                        <li>
+                            A well-organized server-side logic ensures maintainability, scalability, and efficient resource utilization.
+                        </li>
+                    </ul>
+                    <b>2. Database Interaction:</b>
+                    <ul>
+                        <li>
+                            The website relies on a database to store and retrieve data. 
+                        </li>
+                        <li>
+                            In this project, MySQL was used as the database system. Unlike the default SQLite database used in Django projects, MySQL offers better performance and scalability for larger applications.
+                        </li>
+                    </ul>
+                    <b>3. API Implementation:</b>
+                    <ul>
+                        <li>
+                            The API (Application Programming Interface) acts as a bridge between the front-end and back-end. It defines how different components communicate with each other.
+                        </li>
+                        <li>
+                            The API in this project adheres to RESTful principles, which emphasize simplicity, scalability, and statelessness.
+                        </li>
+                        <li>
+                            The API were implemented using Django Rest Framework (DRF), a powerful toolkit for building APIs in Django.
+                        </li>
+                        <li>
+                            The API used serializers to convert raw data from the database into JSON format to be sent into the front-end. This process also supports deserialization, which works backwards. This process receives JSON elements from the front-end, validates and authenticates the data, and convert it into objects that can be stored into the database.
+                        </li>
+                    </ul>
+                    <b>4. Token-Based Authentication:</b>
+                    <ul>
+                        <li>
+                            To secure our back-end services, Django's token-based authentication was employed.
+                        </li>
+                        <li>
+                            When a user logs in or performs an authenticated action, the server generates a unique token associated with that user.
+                        </li>
+                        <li>
+                            Subsequent requests include this token, allowing the server to verify the user's identity and grant access to protected resources, otherwise, the server will response with an error message.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--1st Carousel-->
+            <div class="row">
                 <div class="col-12 col-lg-10">
-                    
                     <div id="carouselCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -104,24 +152,75 @@
                         </button>
                     <!--Closing Carousel-->
                     </div>
+                    <p>The images above show the functionality of some of the endpoints supported by the API.</p>
                 </div>
             </div>
-
-            <div class="row">
-              <div class="col">
-                  <h3>Some explanation about the API</h3>
-              </div>
-          </div>
-
-            <div class="row">
-                <div class="col">
-                    <h3>Implementing the Full Stack</h3>
+            <!--Explanation of images-->
+            <div class="row" style="text-align: start;">
+                <div class="col-12 col-lg-8">
+                    <b>1. Displaying the Menu List</b>
+                    <ul>
+                        <li>
+                            In the menu list endpoint, the API supports GET and POST HTML methods. The GET method sends the list of menu items stored in the database to the front-end. The POST method allows for users to create a new Menu Item by giving 3 characteristics: a title, price, and number of inventory.
+                        </li>
+                    </ul>
+                    <b>2. Displaying Menu Item</b>
+                    <ul>
+                        <li>
+                            By selecting a single menu item from the Menu List, the user will be redirected to the Single Menu Item endpoint where the allowed methods are GET, PUT, PATCH, and DELETE. The GET method shows the data of the menu item to the user and it lets them either update it (using PUT and PATCH) or get rid of it (using DELETE).
+                        </li>
+                    </ul>
+                    <b>3. Displaying Booking List</b>
+                    <ul>
+                        <li>
+                            This endpoint supports GET and POST methods. GET displays the list of booked tables for the restaurant with the name of the guest, the number in a party, and the date for their reservation. The POST method allows users to reserve a table for themselves.
+                        </li>
+                    </ul>
+                    <b>4. Creating User</b>
+                    <ul>
+                        <li>
+                            The User List endpoint allows users to register for the restaurant website by sending a POST method with their email address, username, and a password. This endpoint also allows the GET method to display the list of users registered into the system, and for that there are two different options explained below.
+                        </li>
+                    </ul>
+                    <b>5. Unauthorized User List</b>
+                    <ul>
+                        <li>
+                            Not everyone should have access to the list of registered users. In this case, an error message is returned instead of the expected data when the user requesting the user list does not have the appropriate permissions.
+                        </li>
+                    </ul>
+                    <b>6. Authorized User List</b>
+                    <ul>
+                        <li>
+                            If the user has the required permissions, this endpoint will receive and display the list of users.
+                        </li>
+                    </ul>
                 </div>
             </div>
+            <!--Full Stack-->
+            <div class="row" style="text-align: start;">
+                <div class="col-12 col-lg-8">
+                    <h3 style="text-align: center;">Implementing the Full Stack</h3>
+                    <p>
+                        Once the API was implemented, the next step was to use Django's templates to render dynamic websites with the use of Django Template Language (DTL) and the DRY (Don't Repeat Yourself) principle to avoid code redundancy.<br>
+                        This was achieved by creating a 'Base' template, a 'Header' and 'Footer' templates, and individual page templates.
+                    </p>
+                    <ul>
+                        <li>
+                            The Base HTML file contains the essential components of the website such as the components within the 'head' tag, a navigation menu, and a footer.
+                        </li>
+                        <li>
+                            The Header file contains the logo and the navigation bar for the website and the footer contains the 'copyright' for the site. These two were then included in the 'base' html file using the {% include %} tag of DTL.
+                        </li>
+                        <li>
+                            Finally, each individual web page (Main, About, Menu List, Menu Item, and Booking) is a separate html file that extends the 'base' element by using the {% extends %} and the {% block content %} tags (also from DTL).
+                        </li>
+                    </ul>
 
-            <div class="row justify-content-center">
+                </div>
+            </div>
+            <!--2nd Carousel-->
+            <div class="row">
                 <div class="col-12 col-lg-10">
-                    
                     <div id="carouselCaptions2" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -179,12 +278,15 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+                    <p>The images above show the outcome of the Little Lemon website.</p>
                 </div>
             </div>
-
+            <!--Final Notes-->
             <div class="row">
-                <div class="col">
-                    <h3>Some explanation about the Full Stack</h3>
+                <div class="col-12 col-lg-10">
+                    <p style="font-size: medium;">
+                        NOTE: While the course covers Full Stack development, its emphasis primarily lies on back-end development. Consequently, certain elements of the website —such as the layout code, restaurant name, 'about us' details, menu item images, and descriptions— were supplied directly by the course material.
+                    </p>
                 </div>
             </div>
 
