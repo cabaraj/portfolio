@@ -116,3 +116,11 @@ p, li, div>b{
     border: 2px solid #333;
     border-radius: 10px;
 }
+
+.project-img:hover{
+    opacity: 0.5;
+}
+
+.project-row{
+    margin-bottom: 10%;
+}
