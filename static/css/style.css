@@ -61,8 +61,11 @@ svg:hover{
     padding-left: 3%;
     padding-right: 3%;
 }
-p, li, div>b{
+li, div>b{
     font-size: large;
+}
+#about-me > p{
+    text-align: justify;
 }
 /*Contact Page*/
 .side-by-side{
